@@ -16,7 +16,6 @@ module.exports = {
       {
         semi: true, // 使用分號,
         singleQuote: false, // 使用雙引號
-        // arrowParens: "avoid", // fn = x => x 去除()框框
         trailingComma: "none", // 結尾逗號
         printWidth: 120
       }
