@@ -1,5 +1,4 @@
 <template lang="pug">
-img(alt="Vue logo" src="./assets/logo.png")
 router-view
 </template>
 
