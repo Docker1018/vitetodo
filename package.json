@@ -2,9 +2,10 @@
   "name": "vitetodo",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
+    "serve": "vite preview",
     "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
+    "lint": "vue-cli-service lint",
+    "dev": "vite"
   },
   "dependencies": {
     "vue": "^3.0.5",
@@ -12,11 +13,19 @@
   },
   "devDependencies": {
     "@types/node": "^16.4.1",
+    "@typescript-eslint/eslint-plugin": "^4.28.4",
+    "@typescript-eslint/parser": "^4.28.4",
     "@vitejs/plugin-vue": "^1.2.5",
+    "@vue/cli-plugin-eslint": "^4.5.13",
     "@vue/compiler-sfc": "^3.0.5",
+    "@vue/eslint-config-prettier": "^6.0.0",
     "autoprefixer": "^10.3.1",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^6.2.2",
     "node-sass": "^6.0.1",
     "postcss": "^8.3.6",
+    "prettier": "^2.2.1",
     "sass-loader": "^12.1.0",
     "tailwindcss": "^2.2.6",
     "typescript": "^4.3.2",
