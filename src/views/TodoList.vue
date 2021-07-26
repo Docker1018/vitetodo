@@ -4,7 +4,7 @@
 </template>
 <script lang="ts">
 import { defineComponent, onMounted } from "@vue/runtime-core";
-import { apiTest } from "@/plugins/api/modules/test";
+import { apiTest } from "../plugins/api/modules/test";
 export default defineComponent({
   name: "TodoList",
   setup() {

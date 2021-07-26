@@ -4,6 +4,6 @@ const router = {
 }
 
 export const apiTest = () => {
-  return router.TEST;
-  // return get(router.TEST);
+  // return router.TEST;
+  return get(router.TEST);
 }
