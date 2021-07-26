@@ -1,6 +1,6 @@
 import { get } from "../../api/instance";
 const router = {
-  TEST: "/api/adsf"
+  TEST: "/api/todos/1"
 }
 
 export const apiTest = () => {
