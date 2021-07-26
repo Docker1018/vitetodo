@@ -3,8 +3,15 @@
   p ???
 </template>
 <script lang="ts">
-import { defineComponent } from "@vue/runtime-core";
+import { defineComponent, onMounted } from "@vue/runtime-core";
+import { apiTest } from "@/plugins/api/modules/test";
 export default defineComponent({
-  name: "TodoList"
+  name: "TodoList",
+  setup() {
+    onMounted(async () => {
+      const data = await apiTest();
+      console.log(data);
+    });
+  }
 });
 </script>

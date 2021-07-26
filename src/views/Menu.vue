@@ -1,7 +1,7 @@
 <template lang="pug">
 #Menu
   span 目錄
-  router-link(to="/") todoList
+  router-link(to="/todo") todoList
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";

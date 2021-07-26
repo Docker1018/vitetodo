@@ -10,7 +10,7 @@ let routes = [
     component: Menu
   },
   {
-    path: "/",
+    path: "/todo",
     name: "todoList",
     component: TodoList
   }

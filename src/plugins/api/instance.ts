@@ -15,7 +15,7 @@ axios.defaults.withCredentials = true;
 // axios.interceptors.response.use(response => {
 // })
 
-export const get = (url: string , param: (AxiosRequestConfig | undefined)) => {
+export const get = (url: string , param: (AxiosRequestConfig | undefined) = undefined) => {
   return axios.get(url, param);
 }
 
