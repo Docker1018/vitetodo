@@ -21,3 +21,10 @@ export default defineComponent({
   }
 });
 </script>
+<style lang="scss" scoped>
+#Menu {
+  span {
+    color: red;
+  }
+}
+</style>
