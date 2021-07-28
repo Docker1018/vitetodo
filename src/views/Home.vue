@@ -24,7 +24,7 @@ export default defineComponent({
 <style lang="scss" scoped>
 #Menu {
   span {
-    color: red;
+    color: $primary-color;
   }
 }
 </style>
