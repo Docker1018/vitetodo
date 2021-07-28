@@ -1,15 +1,16 @@
 import { createRouter, createWebHistory } from "vue-router";
-import routes from "./autoRouter";
-import Menu from "@/views/Menu.vue";
+import { vueRouters } from "./autoRouter";
+import Home from "@/views/Home.vue";
 
-routes.push(
+let routes = [
+
   {
     path: "/",
-    name: "Menu",
-    component: Menu
-  }
-)
-console.log(routes);
+    component: Home
+  },
+  ...vueRouters()
+];
+
 export default createRouter({
   history: createWebHistory(),
   routes

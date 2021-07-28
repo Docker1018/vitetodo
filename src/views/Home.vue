@@ -1,8 +1,7 @@
 <template lang="pug">
 #Menu
-  span Menu
-  a(@click="menuRoute('/home')") home
-  a(@click="menuRoute('/sidepage/todolist')") todoList
+  span 目錄
+  a(@click="menuRoute('/menu')") menu
 </template>
 <script lang="ts">
 import { defineComponent } from "vue";
