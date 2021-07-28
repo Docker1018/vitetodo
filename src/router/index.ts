@@ -1,18 +1,16 @@
 import { createRouter, createWebHistory } from "vue-router";
-import TodoList from "@/views/TodoList.vue";
+import routes from "./autoRouter";
 import Menu from "@/views/Menu.vue";
 
-let history = createWebHistory();
-let routes = [
+routes.push(
   {
     path: "/",
     name: "Menu",
     component: Menu
-  },
-  {
-    path: "/todo",
-    name: "todoList",
-    component: TodoList
   }
-]
-export default createRouter({history, routes})
+)
+console.log(routes);
+export default createRouter({
+  history: createWebHistory(),
+  routes
+})
