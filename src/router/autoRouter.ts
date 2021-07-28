@@ -18,7 +18,6 @@ const routesObj: RouteInfo = { childs: {}, pathPoint: [], name: "", componentPat
 for(const filePath of Object.keys(viewFile)) {
   // get file names 
   const pathPoint = filePath.replace("../", "").replace("views/", "").replace(".vue", "").split("/");
-  console.log(pathPoint, 111); 
   let _obj = routesObj;
   for(const pathKey of pathPoint) {
     const name = pathPoint.join("");
@@ -58,7 +57,6 @@ const CreateRoutes = (_childs: Childs) => {
       children: childRoute
     });
   }
-  // console.log(currentRoute)
   return currentRoute;
 };
 
